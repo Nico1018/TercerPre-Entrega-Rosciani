@@ -1,0 +1,11 @@
+{% extends "AppCoder/base.html" %}
+{% load static %}
+
+{% block section1 %}
+<form action="" method="POST">
+    {% csrf_token %}
+    <p><input type="text" name="curso">Nombre</p>
+    <p><input type="number" name="camada">Camada</p>
+    <input type="submit" value="Guardar Cambios">
+</form>
+{% endblock %}
